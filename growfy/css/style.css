@@ -1,0 +1,149 @@
+/* - - - - - - - - - - - */
+/* - - RESET STYLES - -  */
+/* - - - - - - - - - - - */
+@import url(./reset.css);
+/* - - - - - - - - - - - */
+
+/* - - - - - - - - - - - */
+/* - - FONTS INTER - - - */
+/* - - - - - - - - - - - */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/Inter-Light.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/Inter-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/Inter-Medium.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+/* - - - - - - - - - - - - */
+/* - - DEFAULT STYLES - -  */
+/* - - - - - - - - - - - - */
+:root {
+  --color-bg: #0d0d11;
+  --color-0: #000000;
+  --color-1: #9c9c9c;
+  --color-2: #e06733;
+  --color-3: #717171;
+  --color-4: #636060;
+  --color-5: #edf2ec;
+  --color-6: #010201;
+  --color-7: #ffffff;
+  --color-8: #d6e7d2;
+  --color-9: #d9d9d9;
+  --color-10: #aea1a1;
+  /* - - FONT - - */
+  --font-family: "Inter", sans-serif;
+}
+/* - - - - - - - - - - - - - */
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: var(--color-black);
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-weight: 300;
+  line-height: 1;
+  font-size: 16px; /* - - 1REM - - */
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: var(--font-family);
+  color: var(--color-1);
+  background-color: var(--color-0);
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+body._lock {
+  overflow: hidden;
+}
+/* - - - - - - - - - - - - - */
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+/* - - - - - - - - - - - - - */
+[class*="__container"] {
+  max-width: 1310px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+/* - - - - - - - - - - - - - */
+.page {
+  flex: 1 1 auto;
+}

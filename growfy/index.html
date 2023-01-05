@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alexrozhkov.com</title>
+    <!--- CSS --->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <h1>GROWFY</h1>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+
+                <a href="#">
+                    <img src="./img/logo.svg" alt="Logo">
+                </a>
+
+                <nav class="header__menu menu">
+                    <button class="menu__icon icon-menu" type="button"></button>
+                    <ul class="menu__list">
+
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Главная</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О нас</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Страница</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Сервис</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <a href="#" class="header__cart cart-header">Карта</a>
+
+            </div>
+        </header>
+
+        <main class="page"></main>
+
+        <footer class="footer"></footer>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
