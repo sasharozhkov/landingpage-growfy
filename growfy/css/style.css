@@ -35,15 +35,9 @@
   --color-bg: #0d0d11;
   --color-0: #000000;
   --color-1: #9c9c9c;
-  --color-2: #e06733;
-  --color-3: #717171;
-  --color-4: #636060;
-  --color-5: #edf2ec;
-  --color-6: #010201;
+  --color-2: #81818b;
   --color-7: #ffffff;
-  --color-8: #d6e7d2;
-  --color-9: #d9d9d9;
-  --color-10: #aea1a1;
+
   /* - - FONT - - */
   --font-family: "Inter", sans-serif;
 }
@@ -148,6 +142,9 @@ body._lock {
   flex: 1 1 auto;
 }
 /* - - - - - - - - - - - - */
+.page__main {
+}
+/* - - - - - - - - - - - - */
 .button {
   display: inline-block;
   text-align: center;
@@ -161,9 +158,48 @@ body._lock {
   border-radius: 50px;
   transition: background-color 0.3s ease 0s;
 }
+.button_dark {
+  background: rgba(129, 129, 139, 0.2);
+}
 .button:hover {
   background-color: #68a9f0;
 }
+.button_dark:hover {
+  background: rgba(129, 129, 139, 0.3);
+}
+/* - - - - - - - - - - - - */
+.header-main {
+}
+.header-main__title {
+  font-weight: 500;
+  font-size: 51.2px;
+  line-height: 120%;
+  color: var(--color-7);
+  position: relative;
+}
+.header-main__title:not(:last-child) {
+  margin-bottom: 28px;
+}
+.header-main__text {
+  line-height: 1.5;
+  font-size: 18px;
+  color: var(--color-1);
+}
+.header-main__text:not(:last-child) {
+  margin-bottom: 33px;
+}
+.header-main__actions {
+  display: flex;
+  column-gap: 32px;
+  row-gap: 15px;
+}
+.header-main__button {
+}
+/* - - - - - - - - - - - - */
+.text {
+  line-height: 1.5;
+}
+
 /* - - - - - - - - - - - - */
 /* - - - - HEADER - - - -  */
 /* - - - - - - - - - - - - */
@@ -172,7 +208,8 @@ body._lock {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--color-bg);
+  background-color: rgba(13, 13, 17, 0.7);
+  z-index: 50;
 }
 .header__container {
   display: flex;
@@ -250,6 +287,74 @@ body._lock {
   z-index: 5;
 }
 /* - - - - - - - - - - - - */
+.main {
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+.main__container {
+  display: flex;
+  gap: 32px;
+}
+.main__content {
+  flex: 0 1 50%;
+  align-self: center;
+}
+.main__header {
+  position: relative;
+}
+.main__header::before {
+  content: "";
+  background: url(../img/main/decor.svg) 0 0 / 100% no-repeat;
+  width: 122px;
+  height: 122px;
+  position: absolute;
+  top: -10px;
+  left: -32px;
+}
+.main__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: var(--color-1);
+  max-width: 500px;
+}
+.main__actions {
+}
+.main__button {
+}
+.main__images {
+  flex: 0 1 50%;
+}
+.images-main {
+  display: flex;
+  gap: 9.615385%;
+  justify-content: center;
+}
+.images-main__column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.images-main__item {
+  border-radius: 50% / 29%;
+  overflow: hidden;
+}
+.images-main__item_1,
+.images-main__item_4 {
+  border-radius: 50% / 29%;
+}
+.images-main__item_2 {
+  border-radius: 50% 50% 0 50%;
+}
+.images-main__item_3 {
+  border-radius: 50% 0 50% 50%;
+}
+.images-main__item img {
+  max-width: 100%;
+}
+/* - - - - - - - - - - - - */
 @media (max-width: 991.98px) {
   .header__container,
   .menu__list {
@@ -260,6 +365,24 @@ body._lock {
   }
   .header__container {
     min-height: 90px;
+  }
+  /* - - - - - - - - - - - - */
+  .main {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  /* - - - - - - - - - - - - */
+  .header-main__title {
+    font-size: 44px;
+  }
+}
+/* - - - - - - - - - - - - */
+@media (min-width: 767.98px) {
+  .header-main__title {
+    max-width: 520px;
+  }
+  .header-main__text {
+    max-width: 500px;
   }
 }
 /* - - - - - - - - - - - - */
@@ -341,7 +464,28 @@ body._lock {
   .header__container {
     min-height: 70px;
   }
+  /* - - - - - - - - - - - - */
+  .main {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  .main__container {
+    flex-direction: column;
+  }
+  .main__content {
+    align-self: stretch;
+  }
+  .header-main__title {
+    font-size: 32px;
+  }
+  .header-main__title:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .header-main__text:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
+/* - - - - - - - - - - - - */
 .menu-open .menu__body,
 .menu-open .menu__body::before {
   left: 0;
@@ -364,3 +508,11 @@ body._lock {
     background: url(../img/bag.svg) center / auto 100% no-repeat;
   }
 }
+/* - - - - - - - - - - - - */
+@media (max-width: 479.98px) {
+  .header-main__actions {
+    flex-direction: column;
+  }
+}
+
+/* 2:09:55 */
