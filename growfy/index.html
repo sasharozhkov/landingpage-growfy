@@ -19,8 +19,14 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="up">
         <header class="header">
+
+            <!-- progress-bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+
             <div class="header__container">
                 <a href="#" class="header__logo">
                     <img src="./img/logo.svg" alt="Logo">
@@ -29,16 +35,13 @@
                     <div class="menu__body">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Главная</a>
+                                <a href="#up" class="menu__link">Главная</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link">О нас</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Страница</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Сервис</a>
+                                <a href="#service" class="menu__link">Сервис</a>
                             </li>
                         </ul>
                     </div>
@@ -47,7 +50,7 @@
                     <span class="cart-header__text">Карта</span>
                     <span class="cart-header__quantity">0</span>
                 </a>
-                <a href="#" class="header__button button">Начнем</a>
+                <a href="#service" class="header__button button">Начнем</a>
                 <button class="icon-menu" type="button">
                     <span></span>
                 </button>
@@ -55,9 +58,10 @@
         </header>
 
         <main class="page">
+
             <section class="page__main main">
                 <div class="main__container">
-                    <div class="main__content">
+                    <div class="main__content _anim-items _anim-no-hide">
                         <div class="main__header header-main">
                             <h1 class="header-main__title">Маркетинговые решения, которые развивают бизнес.</h1>
                             <div class="header-main__text">
@@ -65,12 +69,12 @@
                                     практически все. Почему так важно это знать?</p>
                             </div>
                             <div class="header-main__actions">
-                                <a href="#" class="header-main__button button">Наш сервис</a>
+                                <a href="#service" class="header-main__button button">Наш сервис</a>
                                 <a href="#" class="header-main__button button button_dark">Контакты</a>
                             </div>
                         </div>
                     </div>
-                    <div class="main__images images-main">
+                    <div class="main__images images-main _anim-items _anim-no-hide">
                         <div class="images-main__column">
                             <div class="images-main__item images-main__item_1">
                                 <img src="./img/main/01.jpg" alt="Image">
@@ -92,7 +96,7 @@
             </section>
 
             <section class="page__clients clients">
-                <div class="clients__container">
+                <div class="clients__container _anim-items _anim-no-hide">
                     <h2 class="clients__title">ДОВЕРЯЮТ стартапы и крупные предприятия</h2>
                     <div class="clients__items">
                         <div class="clients__item">
@@ -109,6 +113,66 @@
                         </div>
                         <div class="clients__item">
                             <img src="./img/clients/04.svg" alt="clients">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__services services" id="service">
+                <div class="services__container">
+                    <div class="services__content _anim-items _anim-no-hide">
+
+                        <div class="services__header header-main">
+                            <a href="#" class="header-main__label">Сервисы</a>
+                            <h1 class="header-main__title">Наши услуги</h1>
+                            <div class="header-main__text">
+                                <p>Быть впереди своих конкурентов – продвигать свой бизнес, чётко понимая ситуацию с
+                                    каналами появления посетителей. </p>
+                            </div>
+                            <div class="header-main__actions">
+                                <a href="#" class="header-main__button button">Сервисы</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="services__items _anim-items _anim-no-hide">
+
+                        <div class="services__column">
+                            <article class="services__item item-services">
+                                <div class="item-services__icon">
+                                    <img src="./img/services/01.svg" alt="services">
+                                </div>
+                                <h4 class="item-services__title">Поисковый Маркетинг</h4>
+                                <div class="item-services__text text">Продвижение сайта – это комплекс мер по
+                                    оптимизации и улучшению интернет-ресурса...</div>
+                            </article>
+                            <article class="services__item item-services">
+                                <div class="item-services__icon">
+                                    <img src="./img/services/02.svg" alt="services">
+                                </div>
+                                <h4 class="item-services__title">Email Рассылка</h4>
+                                <div class="item-services__text text">Нужны новые клиенты и увеличение трафика?
+                                    Профессионально организованная E-mail</div>
+                            </article>
+                        </div>
+                        <div class="services__column">
+                            <article class="services__item item-services">
+                                <div class="item-services__icon">
+                                    <img src="./img/services/03.svg" alt="services">
+                                </div>
+                                <h4 class="item-services__title">Крауд-Маркетинг</h4>
+                                <div class="item-services__text text">Крауд-маркетинг является отличным помощником для
+                                    увеличения количества качественных </div>
+                            </article>
+                            <article class="services__item item-services">
+                                <div class="item-services__icon">
+                                    <img src="./img/services/04.svg" alt="services">
+                                </div>
+                                <h4 class="item-services__title">Аналитика </h4>
+                                <div class="item-services__text text">Быть впереди своих конкурентов – продвигать свой
+                                    бизнес, чётко понимая ситуацию </div>
+                            </article>
                         </div>
                     </div>
                 </div>
