@@ -28,32 +28,39 @@
             </div>
 
             <div class="header__container">
+
                 <a href="#" class="header__logo">
                     <img src="./img/logo.svg" alt="Logo">
                 </a>
-                <nav class="header__menu menu">
-                    <div class="menu__body">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#up" class="menu__link">Главная</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">О нас</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#service" class="menu__link">Сервис</a>
-                            </li>
-                        </ul>
-                    </div>
+
+                <!-- menu -->
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li>
+                            <a title="Home" href="#" class="menu__link orange">Главная</a>
+                        </li>
+                        <li>
+                            <a title="Price" data-goto=".page__services" href="#" class="menu__link">Сервис</a>
+                        </li>
+                        <li>
+                            <a title="Contacts" data-goto=".contact__container" href="#" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
                 </nav>
+                <!-- end menu -->
+
                 <a href="#" class="header__cart cart-header">
                     <span class="cart-header__text">Карта</span>
                     <span class="cart-header__quantity">0</span>
                 </a>
+
                 <a href="#service" class="header__button button">Начнем</a>
-                <button class="icon-menu" type="button">
-                    <span></span>
-                </button>
+
+                <!-- burger -->
+                <div class="header__menu menu">
+                    <div class="menu__icon"><span></span></div>
+                </div>
+
             </div>
         </header>
 
