@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alexrozhkov.com</title>
-    <!--- CSS --->
+    <!--- Css --->
     <link rel="stylesheet" href="./css/style.css">
-    <!--- favicon --->
+    <!--- Favicon --->
     <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -21,19 +21,16 @@
 <body>
     <div class="wrapper" id="up">
         <header class="header">
-
-            <!-- progress-bar -->
+            <!-- Progress bar -->
             <div class="progress-container">
                 <div class="progress-bar" id="myBar"></div>
             </div>
-
             <div class="header__container">
-
+                <!-- Logo -->
                 <a href="#up" class="header__logo">
                     <img src="./img/logo.svg" alt="Logo">
                 </a>
-
-                <!-- menu -->
+                <!-- Menu -->
                 <nav class="menu__body">
                     <ul class="menu__list">
                         <li>
@@ -46,26 +43,24 @@
                             <a title="Contacts" data-goto=".contact__container" href="#" class="menu__link">Контакты</a>
                         </li>
                     </ul>
-                </nav>
-                <!-- end menu -->
-
+                </nav> <!-- End menu -->
+                <!-- Basket -->
                 <a href="#" class="header__cart cart-header">
                     <span class="cart-header__text">Карта</span>
                     <span class="cart-header__quantity">0</span>
                 </a>
-
                 <a href="#service" class="header__button button">Начнем</a>
-
-                <!-- burger -->
+                <!-- Burger -->
                 <div class="header__menu menu">
-                    <div class="menu__icon"><span></span></div>
-                </div>
-
+                    <div class="menu__icon">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                </div> <!-- End burger -->
             </div>
         </header>
-
         <main class="page">
-
+            <!-- Section main -->
             <section class="page__main main">
                 <div class="main__container">
                     <div class="main__content _anim-items _anim-no-hide">
@@ -101,7 +96,7 @@
                     </div>
                 </div>
             </section>
-
+            <!-- Section clients -->
             <section class="page__clients clients">
                 <div class="clients__container _anim-items _anim-no-hide">
                     <h2 class="clients__title">ДОВЕРЯЮТ стартапы и крупные предприятия</h2>
@@ -124,11 +119,10 @@
                     </div>
                 </div>
             </section>
-
+            <!-- Section services -->
             <section class="page__services services" id="service">
                 <div class="services__container">
                     <div class="services__content _anim-items _anim-no-hide">
-
                         <div class="services__header header-main">
                             <a href="#" class="header-main__label">Сервисы</a>
                             <h1 class="header-main__title">Наши услуги</h1>
@@ -140,9 +134,7 @@
                                 <a href="#" class="header-main__button button">Сервисы</a>
                             </div>
                         </div>
-
                     </div>
-
                     <div class="services__items _anim-items _anim-no-hide">
 
                         <div class="services__column">
@@ -184,7 +176,41 @@
                     </div>
                 </div>
             </section>
+            <!-- Section why -->
+            <section class="page__why why">
+                <div class="why__container">
+                    <div class="why__images images-why">
+                        <div class="images-why__item images-why__item1">
+                            <img src="./img/why/01.jpg" alt="foto">
+                        </div>
+                        <div class="images-why__item images-why__item2">
+                            <img src="./img/why/02.jpg" alt="foto">
+                        </div>
+                    </div>
+                    <div class="why__content">
+                        <div class="why__header header-main">
+                            <a href="#" class="header-main__label">Почему мы?</a>
+                            <h1 class="header-main__title">
+                                Мы помогаем великим брендам масштабироваться
+                            </h1>
+                            <div class="header-main__text">
+                                <p>
+                                    У нас есть всё, чтобы растить своих Клиентов и развиваться самим. Мы отлично
+                                    разбираемся в том, что делаем и для чего.
+                                </p>
+                            </div>
 
+                            <ul class="header-main__list">
+                                <li>Работаем эффективно</li>
+                                <li>Команда сильных маркетологов</li>
+                                <li>Быстрый результат</li>
+                                <li>20 лет в маркетинге</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
 

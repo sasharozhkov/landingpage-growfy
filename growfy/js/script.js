@@ -16,12 +16,13 @@ function myFunction() {
 
 // ===================================================
 
-// animation
+// animation elements
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
     window.addEventListener('scroll', animOnScroll);
     function animOnScroll() {
+
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index];
             const animItemHeight = animItem.offsetHeight;
@@ -42,6 +43,7 @@ if (animItems.length > 0) {
             }
         }
     }
+
     function offset(el) {
         const rect = el.getBoundingClientRect(),
             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -60,6 +62,7 @@ if (animItems.length > 0) {
 /* burger menu*/
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
+
 if (iconMenu) {
     iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock');
@@ -67,6 +70,17 @@ if (iconMenu) {
         menuBody.classList.toggle('_active');
     });
 }
+
+// close menu if inter not link
+if (menuBody) {
+    menuBody.addEventListener("click", function (e) {
+        document.body.classList.remove('_lock');
+        iconMenu.classList.remove('_active');
+        menuBody.classList.remove('_active');
+    });
+}
+
+// ===================================================
 
 /* scroll to click */
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
@@ -79,7 +93,7 @@ if (menuLinks.length > 0) {
         const menuLink = e.target;
         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
-            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset /*- document.querySelector('header').offsetHeight*/;
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
 
             /* close burger to click */
             if (iconMenu.classList.contains('_active')) {
