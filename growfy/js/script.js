@@ -1,7 +1,6 @@
 "user strict"
 
 // ===================================================
-
 /* progress bar */
 window.onscroll = function () { myFunction() };
 
@@ -13,9 +12,7 @@ function myFunction() {
     var top = window.scrollY;
     document.getElementById("myBar").style.width = scrolled + "%";
 }
-
 // ===================================================
-
 // animation elements
 const animItems = document.querySelectorAll('._anim-items');
 
@@ -56,9 +53,7 @@ if (animItems.length > 0) {
     }, 500)
 
 }
-
 // ===================================================
-
 /* burger menu*/
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
@@ -79,9 +74,7 @@ if (menuBody) {
         menuBody.classList.remove('_active');
     });
 }
-
 // ===================================================
-
 /* scroll to click */
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {
