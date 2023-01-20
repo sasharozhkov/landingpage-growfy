@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alexrozhkov.com</title>
-    <!--- Css --->
+    <!-- Css -->
     <link rel="stylesheet" href="./css/style.css">
-    <!--- Favicon --->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -34,7 +34,7 @@
                 <nav class="menu__body">
                     <ul class="menu__list">
                         <li>
-                            <a title="Home" data-goto=".page__main" href="#" class="menu__link orange">Главная</a>
+                            <a title="Home" href="#up" class="menu__link orange">Главная</a>
                         </li>
                         <li>
                             <a title="Price" data-goto=".page__services" href="#" class="menu__link">Сервис</a>
@@ -136,7 +136,6 @@
                         </div>
                     </div>
                     <div class="services__items _anim-items _anim-no-hide">
-
                         <div class="services__column">
                             <article class="services__item item-services">
                                 <div class="item-services__icon">
@@ -210,7 +209,7 @@
                 </div>
             </section>
             <!-- Section advantages -->
-            <section class="page__advantages advantages">
+            <div class="page__advantages advantages">
                 <div class="advantages__container">
                     <div class="advantages__items _anim-items _anim-no-hide">
                         <article class="advantages__item">
@@ -240,10 +239,154 @@
                         <img src="./img/advantages/01.jpg" alt="Image">
                     </div>
                 </div>
+            </div>
+            <!-- Section testimonials -->
+            <section class="page__testimonials testimonials">
+                <div class="testimonials__container">
+                    <div class="testimonials__header header-main _anim-items _anim-no-hide">
+                        <a href="#" class="header-main__label">отзывы</a>
+                        <h1 class="header-main__title">Что говорят наши клиенты</h1>
+                        <div class="header-main__body">
+                            <div class="header-main__text">
+                                <p>
+                                    Гроуфи – единственная компания, которой удалось понять наши цели, аудиторию и
+                                    продукт.
+                                    Благодаря этому получилось обеспечить рост продаж по всем продуктовым направлениям,
+                                    приоритетным для нашего бизнеса.
+                                </p>
+                            </div>
+                            <div class="header-main__actions">
+                                <a href="#service" class="header-main__button button">Связаться</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__items _anim-items _anim-no-hide">
+                        <article class="testimonials__item item-testimonial">
+                            <div class="item-testimonial__user user-testimonial">
+                                <div class="user-testimonial__avatar">
+                                    <img src="./img/testimonials/avatars/01.png" alt="Image">
+                                </div>
+                                <div class="user-testimonial__body">
+                                    <div class="user-testimonial__title">Юрий Светлый</div>
+                                    <div class="user-testimonial__company">Яндекс</div>
+                                </div>
+                            </div>
+                            <h4 class="item-testimonial__title">"Рекомендую это агентство"</h4>
+                            <div class="item-testimonial__text">
+                                <p>С компанией Гоуфи мы работаем более 5 лет, находимся в топ-10 более чем по 1000
+                                    поисковых
+                                    запросов. Наша цель — топ-3, и ежеквартально количество запросов, по которым наш
+                                    сайт
+                                    занимает первые позиции.
+                                </p>
+                            </div>
+                            <div class="item-testimonial__rating">
+                                <!-- Simple-rating -->
+                                <div class="item-reviews__raiting simple-rating">
+                                    <div class="simple-rating__items">
+                                        <input id="simple-rating__5" type="radio" class="simple-rating__item"
+                                            name="simple-rating" value="5">
+                                        <label for="simple-rating__5" class="simple-rating__label"></label>
+                                        <input id="simple-rating__4" type="radio" class="simple-rating__item"
+                                            name="simple-rating" value="4">
+                                        <label for="simple-rating__4" class="simple-rating__label"></label>
+                                        <input id="simple-rating__3" type="radio" class="simple-rating__item" checked
+                                            name="simple-rating" value="3">
+                                        <label for="simple-rating__3" class="simple-rating__label"></label>
+                                        <input id="simple-rating__2" type="radio" class="simple-rating__item"
+                                            name="simple-rating" value="2">
+                                        <label for="simple-rating__2" class="simple-rating__label"></label>
+                                        <input id="simple-rating__1" type="radio" class="simple-rating__item"
+                                            name="simple-rating" value="1">
+                                        <label for="simple-rating__1" class="simple-rating__label"></label>
+                                    </div>
+                                </div><!-- end simple-rating -->
+                            </div>
+                        </article>
+                        <article class="testimonials__item item-testimonial">
+                            <div class="item-testimonial__user user-testimonial">
+                                <div class="user-testimonial__avatar">
+                                    <img src="./img/testimonials/avatars/02.png" alt="Image">
+                                </div>
+                                <div class="user-testimonial__body">
+                                    <div class="user-testimonial__title">Алина Кравцова</div>
+                                    <div class="user-testimonial__company">Маил</div>
+                                </div>
+                            </div>
+                            <h4 class="item-testimonial__title">«Поддержка потрясающая»</h4>
+                            <div class="item-testimonial__text">
+                                <p>С Гоуфи мы работаем с июня 2016 года. Можно с уверенностью сказать, что за пройденный
+                                    этап сайт компании и в целом наше присутствие в интернете вышли на совершенно новый
+                                    уровень.
+                                </p>
+                            </div>
+                            <div class="item-testimonial__rating">
+                                <!-- Simple-rating -->
+                                <div class="item-reviews__raiting simple-rating">
+                                    <div class="simple-rating__items">
+                                        <input id="simple-rating__15" type="radio" class="simple-rating__item"
+                                            name="simple-rating-2" value="5">
+                                        <label for="simple-rating__15" class="simple-rating__label"></label>
+                                        <input id="simple-rating__14" type="radio" class="simple-rating__item"
+                                            name="simple-rating-2" value="4">
+                                        <label for="simple-rating__14" class="simple-rating__label"></label>
+                                        <input id="simple-rating__13" type="radio" class="simple-rating__item" checked
+                                            name="simple-rating-2" value="3">
+                                        <label for="simple-rating__13" class="simple-rating__label"></label>
+                                        <input id="simple-rating__12" type="radio" class="simple-rating__item"
+                                            name="simple-rating-2" value="2">
+                                        <label for="simple-rating__12" class="simple-rating__label"></label>
+                                        <input id="simple-rating__11" type="radio" class="simple-rating__item"
+                                            name="simple-rating-2" value="1">
+                                        <label for="simple-rating__11" class="simple-rating__label"></label>
+                                    </div>
+                                </div><!-- end simple-rating -->
+                            </div>
+                        </article>
+                        <article class="testimonials__item item-testimonial">
+                            <div class="item-testimonial__user user-testimonial">
+                                <div class="user-testimonial__avatar">
+                                    <img src="./img/testimonials/avatars/03.png" alt="Image">
+                                </div>
+                                <div class="user-testimonial__body">
+                                    <div class="user-testimonial__title">София Жукова</div>
+                                    <div class="user-testimonial__company">Сбер</div>
+                                </div>
+                            </div>
+                            <h4 class="item-testimonial__title">“Переломный момент для нас”</h4>
+                            <div class="item-testimonial__text">
+                                <p>АО «АльфаСтрахование» выражает благодарность Гоуфи за проведенные работы на сайте
+                                    www.alfastrah.ru. Благодаря вашему высокому профессионализму нам удается совместно
+                                    расширять рынок.
+                                </p>
+                            </div>
+                            <div class="item-testimonial__rating">
+                                <!-- Simple-rating -->
+                                <div class="item-reviews__raiting simple-rating">
+                                    <div class="simple-rating__items">
+                                        <input id="simple-rating__25" type="radio" class="simple-rating__item"
+                                            name="simple-rating-3" value="5">
+                                        <label for="simple-rating__25" class="simple-rating__label"></label>
+                                        <input id="simple-rating__24" type="radio" class="simple-rating__item"
+                                            name="simple-rating-3" value="4">
+                                        <label for="simple-rating__24" class="simple-rating__label"></label>
+                                        <input id="simple-rating__23" type="radio" class="simple-rating__item" checked
+                                            name="simple-rating-3" value="3">
+                                        <label for="simple-rating__23" class="simple-rating__label"></label>
+                                        <input id="simple-rating__22" type="radio" class="simple-rating__item"
+                                            name="simple-rating-3" value="2">
+                                        <label for="simple-rating__22" class="simple-rating__label"></label>
+                                        <input id="simple-rating__21" type="radio" class="simple-rating__item"
+                                            name="simple-rating-3" value="1">
+                                        <label for="simple-rating__21" class="simple-rating__label"></label>
+                                    </div>
+                                </div><!-- end simple-rating -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </section>
-
         </main>
-
         <footer class="footer"></footer>
     </div>
     <script src="./js/script.js"></script>
