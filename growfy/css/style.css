@@ -292,7 +292,7 @@ body._lock {
 }
 .menu__list > li:not(:last-child) {
   position: relative;
-  margin: 0px 30px 0px 0px;
+  margin: 0px 22px 0px 0px;
 }
 .menu__link {
   font-family: "Inika";
@@ -381,7 +381,7 @@ body._touch .menu__link {
 }
 /* - - - - Animation - - - - */
 ._anim-items {
-  transform: translate(0px, 10%);
+  transform: translate(0px, 40%);
   transition: all 1.3s ease 0s;
   opacity: 0;
 }
@@ -903,7 +903,7 @@ body._touch .menu__link {
 .hidden-alexrozhkov {
   display: none;
 }
-.show-alexrozhkov {
+s .show-alexrozhkov {
   display: block;
 }
 .hidden-social {
