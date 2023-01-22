@@ -12,6 +12,7 @@ function myFunction() {
     var top = window.scrollY;
     document.getElementById("myBar").style.width = scrolled + "%";
 }
+
 // ===================================================
 // animation elements
 const animItems = document.querySelectorAll('._anim-items');
@@ -19,7 +20,7 @@ const animItems = document.querySelectorAll('._anim-items');
 if (animItems.length > 0) {
     window.addEventListener('scroll', animOnScroll);
     function animOnScroll() {
-
+        // animItems.forEach через forEach
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index];
             const animItemHeight = animItem.offsetHeight;
@@ -31,12 +32,12 @@ if (animItems.length > 0) {
                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
             }
 
-            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+            else if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
                 animItem.classList.add('_active');
-            } else {
-                if (!animItem.classList.contains('_anim-no-hide')) {
-                    animItem.classList.remove('_active');
-                }
+            }
+
+            else if (!animItem.classList.contains('_anim-no-hide')) {
+                animItem.classList.remove('_active');
             }
         }
     }
@@ -51,15 +52,14 @@ if (animItems.length > 0) {
     setTimeout(() => {
         animOnScroll();
     }, 500)
-
 }
+
 // ===================================================
 /* burger menu*/
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
 const menuLogo = document.querySelector('.hidden-alexrozhkov');
 const menuSocial = document.querySelector('.hidden-social');
-
 
 if (iconMenu) {
     iconMenu.addEventListener("click", function (e) {
@@ -81,6 +81,7 @@ if (menuBody) {
         menuSocial.classList.remove('show-social');
     });
 }
+
 // ===================================================
 /* scroll to click */
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
