@@ -57,12 +57,17 @@ if (animItems.length > 0) {
 /* burger menu*/
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
+const menuLogo = document.querySelector('.hidden-alexrozhkov');
+const menuSocial = document.querySelector('.hidden-social');
+
 
 if (iconMenu) {
     iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
+        menuLogo.classList.toggle('show-alexrozhkov');
+        menuSocial.classList.toggle('show-social');
     });
 }
 
@@ -72,6 +77,8 @@ if (menuBody) {
         document.body.classList.remove('_lock');
         iconMenu.classList.remove('_active');
         menuBody.classList.remove('_active');
+        menuLogo.classList.remove('show-alexrozhkov');
+        menuSocial.classList.remove('show-social');
     });
 }
 // ===================================================
